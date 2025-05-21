@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia das Mães - Homenagem Especial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'dia_das_mães.css'%}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Feliz Dia das Mães</h1>
+            <p class="subtitle">Uma homenagem a todas as mães, heroínas do cotidiano</p>
+            <button class="heart-btn" id="heartBtn">
+                <i class="fas fa-heart"></i> Enviar Amor
+            </button>
+            
+            <div class="flowers">
+                <div class="flower floating" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjZTkxZTYzIiBkPSJNNTAuMzAgQzU1LDIwIDY1LDIwIDcwLDMwIEM3NSw0MCA2NSw1MCA1MCw2MCBDMzUsNTAgMjUsNDAgMzAsMzAgQzM1LDIwIDQ1LDIwIDUwLDMwIi8+PC9zdmc+')"></div>
+                <div class="flower floating" style="animation-delay: 0.5s; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjZmY0MDgxIiBkPSJNNTAuMzAgQzU1LDIwIDY1LDIwIDcwLDMwIEM3NSw0MCA2NSw1MCA1MCw2MCBDMzUsNTAgMjUsNDAgMzAsMzAgQzM1LDIwIDQ1LDIwIDUwLDMwIi8+PC9zdmc+')"></div>
+                <div class="flower floating" style="animation-delay: 1s; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjYWQxNDU3IiBkPSJNNTAuMzAgQzU1LDIwIDY1LDIwIDcwLDMwIEM3NSw0MCA2NSw1MCA1MCw2MCBDMzUsNTAgMjUsNDAgMzAsMzAgQzM1LDIwIDQ1LDIwIDUwLDMwIi8+PC9zdmc+')"></div>
+                <div class="flower floating" style="animation-delay: 1.5s; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjZTkxZTYzIiBkPSJNNTAuMzAgQzU1LDIwIDY1LDIwIDcwLDMwIEM3NSw0MCA2NSw1MCA1MCw2MCBDMzUsNTAgMjUsNDAgMzAsMzAgQzM1LDIwIDQ1LDIwIDUwLDMwIi8+PC9zdmc+')"></div>
+                <div class="flower floating" style="animation-delay: 2s; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjZmY0MDgxIiBkPSJNNTAuMzAgQzU1LDIwIDY1LDIwIDcwLDMwIEM3NSw0MCA2NSw1MCA1MCw2MCBDMzUsNTAgMjUsNDAgMzAsMzAgQzM1LDIwIDQ1LDIwIDUwLDMwIi8+PC9zdmc+')"></div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="content-section">
+        <div class="container">
+            <h2>Para a Mulher Mais Especial do Mundo</h2>
+            
+            <div class="poem">
+                <p>Mãe, és o sol que aquece meu dia,</p>
+                <p>O porto seguro onde encontro abrigo,</p>
+                <p>O amor incondicional que nunca varia,</p>
+                <p>O doce refúgio contra qualquer perigo.</p>
+                <br>
+                <p>Teu sorriso é luz nos dias mais cinzentos,</p>
+                <p>Teu abraço cura as dores mais profundas,</p>
+                <p>Nos teus conselhos encontro os mais sábios ventos,</p>
+                <p>Que guiam minhas velas, sempre juntas.</p>
+            </div>
+            
+            <div class="photo-collage">
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mãe e filho abraçados">
+                    <div class="photo-caption">Amor Incondicional</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mãe ensinando filha">
+                    <div class="photo-caption">Sabedoria que Guia</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1571816119553-df62a2eedf56?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mãe brincando com filhos">
+                    <div class="photo-caption">Risos Compartilhados</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mãe sorrindo">
+                    <div class="photo-caption">Beleza que Inspira</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gift-ideas">
+        <div class="container">
+            <h2>Ideias de Presentes para o Dia das Mães</h2>
+            <p>Mostre seu amor com um presente especial</p>
+            
+            <div class="gift-cards">
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Buquê de flores">
+                    <div class="gift-info">
+                        <h3>Buquê de Flores</h3>
+                        <p>Um lindo arranjo com as flores preferidas da mamãe.</p>
+                        <div class="gift-price">A partir de R$ 80,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jantar especial">
+                    <div class="gift-info">
+                        <h3>Jantar Especial</h3>
+                        <p>Uma noite inesquecível no restaurante favorito dela.</p>
+                        <div class="gift-price">A partir de R$ 150,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Spa day">
+                    <div class="gift-info">
+                        <h3>Dia de Spa</h3>
+                        <p>Um dia de relaxamento e cuidados para renovar as energias.</p>
+                        <div class="gift-price">A partir de R$ 200,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Livro personalizado">
+                    <div class="gift-info">
+                        <h3>Livro Personalizado</h3>
+                        <p>Uma história sobre o amor entre vocês, com fotos e mensagens.</p>
+                        <div class="gift-price">A partir de R$ 120,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>Para todas as mães, nosso eterno obrigado</h3>
+            <p>O amor de mãe é o combustível que nos permite fazer o impossível.</p>
+            
+            <p class="copyright">© <span id="current-year"></span> Homenagem ao Dia das Mães | Criado com ❤️ para todas as mães do mundo</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'dia_das_mães.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mês das Noivas - Celebrando o Amor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'mês_das_noivas.css'%}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mês das Noivas</h1>
+            <p class="subtitle">Celebrando o amor, a união e os sonhos a dois</p>
+            <button class="heart-btn" id="heartBtn">
+                <i class="fas fa-heart"></i> Enviar Felicitações
+            </button>
+            
+            <div class="decorations">
+                <div class="ring floating" style="animation-delay: 0.3s;">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <div class="ring floating" style="animation-delay: 0.6s;">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <div class="ring floating" style="animation-delay: 0.9s;">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="content-section">
+        <div class="container">
+            <h2>Para o Casal Mais Feliz</h2>
+            
+            <div class="poem">
+                <p>No mês das noivas, celebramos com amor,</p>
+                <p>O início de uma linda jornada, cheia de cor.</p>
+                <p>Dois corações que agora se unem,</p>
+                <p>E prometem ser felizes para sempre, juntos sempre.</p>
+                <br>
+                <p>Que esta união seja abençoada,</p>
+                <p>Cheia de amor, paz e harmonia.</p>
+                <p>Que cada dia seja especial,</p>
+                <p>Como este momento de magia nupcial.</p>
+            </div>
+            
+            <div class="photo-collage">
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Casal se beijando">
+                    <div class="photo-caption">Momento de Amor</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Alianças">
+                    <div class="photo-caption">Símbolo da União</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Noiva">
+                    <div class="photo-caption">Bela Noiva</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Casamento">
+                    <div class="photo-caption">Celebração</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gift-ideas">
+        <div class="container">
+            <h2>Presentes para o Casal</h2>
+            <p>Ideias para presentear no mês das noivas</p>
+            
+            <div class="gift-cards">
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jantar romântico">
+                    <div class="gift-info">
+                        <h3>Jantar Romântico</h3>
+                        <p>Uma noite especial em um restaurante requintado.</p>
+                        <div class="gift-price">A partir de R$ 200,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Viagem">
+                    <div class="gift-info">
+                        <h3>Pacote de Viagem</h3>
+                        <p>Fim de semana em um local romântico.</p>
+                        <div class="gift-price">A partir de R$ 800,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://media.istockphoto.com/id/637323718/pt/foto/apartment-for-freelancer.jpg?s=2048x2048&w=is&k=20&c=S2nkD-PNoz3TajhjdA3kG-2fEF8x-R-5mugqRnNnj80=" alt="Objetos decorativos">
+                    <div class="gift-info">
+                        <h3>Decoração para o Lar</h3>
+                        <p>Peças especiais para a nova casa do casal.</p>
+                        <div class="gift-price">A partir de R$ 150,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sessão de fotos">
+                    <div class="gift-info">
+                        <h3>Sessão de Fotos</h3>
+                        <p>Registro profissional deste momento especial.</p>
+                        <div class="gift-price">A partir de R$ 300,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tips-section">
+        <div class="container">
+            <h2>Dicas para o Grande Dia</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Planejamento</h3>
+                    <p>Crie uma checklist com todos os detalhes importantes para não esquecer nada.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Vestido</h3>
+                    <p>Escolha com antecedência e faça todos os ajustes necessários.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotógrafo</h3>
+                    <p>Contrate um profissional para registrar cada momento especial.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-ring"></i>
+                    <h3>Alianças</h3>
+                    <p>Compre com antecedência e grave uma mensagem especial dentro delas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>Para todos os casais de noivos, nossa celebração</h3>
+            <p>Que seu amor cresça a cada dia e seja eterno como as estrelas.</p>
+            
+            <p class="copyright">© <span id="current-year"></span> Mês das Noivas | Criado com ❤️ para celebrar o amor</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'mês_das_noivas.js'%}"></script>
+</body>
+</html>

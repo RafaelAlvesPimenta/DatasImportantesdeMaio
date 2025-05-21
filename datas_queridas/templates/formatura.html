@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebração de Formatura | Parabéns Formandos!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'formatura.css'%}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Celebração de Formatura</h1>
+            <p class="subtitle">Uma jornada concluída, um futuro brilhante pela frente</p>
+            <button class="cap-btn" id="confettiBtn">
+                <i class="fas fa-graduation-cap"></i> Jogar Confetes
+            </button>
+            
+            <div class="academic-icons">
+                <div class="icon floating" style="animation-delay: 0.3s;">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="icon floating" style="animation-delay: 0.6s;">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <div class="icon floating" style="animation-delay: 0.9s;">
+                    <i class="fas fa-award"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="content-section">
+        <div class="container">
+            <h2>Para os Formandos</h2>
+            
+            <div class="message">
+                <p>Hoje celebramos não apenas o fim de uma jornada acadêmica, mas o início de uma nova fase repleta de possibilidades. Cada capítulo escrito, cada desafio superado e cada noite em claro valeram a pena.</p>
+                <p>Que este diploma seja apenas o primeiro de muitas conquistas. O mundo espera por vocês!</p>
+            </div>
+            
+            <div class="photo-collage">
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Formatura">
+                    <div class="photo-caption">Momento de Conquista</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jogando capelos">
+                    <div class="photo-caption">Tradição do Capelo</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Grupo de formandos">
+                    <div class="photo-caption">Companheiros de Jornada</div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Diploma">
+                    <div class="photo-caption">Recompensa do Esforço</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="timeline-section">
+        <div class="container">
+            <h2>Linha do Tempo Acadêmica</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1º Ano</div>
+                    <div class="timeline-content">
+                        <h3>Início da Jornada</h3>
+                        <p>Adaptação à vida universitária, primeiras amizades e descobertas na área escolhida.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2º Ano</div>
+                    <div class="timeline-content">
+                        <h3>Imersão no Curso</h3>
+                        <p>Matérias mais específicas, primeiros projetos relevantes e definição de interesses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">3º Ano</div>
+                    <div class="timeline-content">
+                        <h3>Momento Decisivo</h3>
+                        <p>Estágios, iniciação científica e preparação para o mercado de trabalho.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">4º Ano</div>
+                    <div class="timeline-content">
+                        <h3>Reta Final</h3>
+                        <p>TCC, últimas disciplinas e preparação para a formatura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gift-ideas">
+        <div class="container">
+            <h2>Ideias para Presentes</h2>
+            <p>Celebre esta conquista com um presente memorável</p>
+            
+            <div class="gift-cards">
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Viagem">
+                    <div class="gift-info">
+                        <h3>Viagem de Formatura</h3>
+                        <p>Uma experiência inesquecível para comemorar a conquista.</p>
+                        <div class="gift-price">Valores variados</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1585336261022-680e295ce3fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Relógio">
+                    <div class="gift-info">
+                        <h3>Relógio ou Joia</h3>
+                        <p>Um acessório elegante para marcar este momento especial.</p>
+                        <div class="gift-price">A partir de R$ 300,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Livros">
+                    <div class="gift-info">
+                        <h3>Coleção de Livros</h3>
+                        <p>Obras relevantes para a carreira ou para desenvolvimento pessoal.</p>
+                        <div class="gift-price">A partir de R$ 150,00</div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Equipamento profissional">
+                    <div class="gift-info">
+                        <h3>Equipamento Profissional</h3>
+                        <p>Ferramentas de trabalho para começar a carreira com tudo.</p>
+                        <div class="gift-price">Valores variados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="quotes-section">
+        <div class="container">
+            <h2>Mensagens Inspiradoras</h2>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Educação é a arma mais poderosa que você pode usar para mudar o mundo."</p>
+                    <cite>- Nelson Mandela</cite>
+                </div>
+                <div class="quote-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"O sucesso é a soma de pequenos esforços repetidos dia após dia."</p>
+                    <cite>- Robert Collier</cite>
+                </div>
+                <div class="quote-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"O futuro pertence àqueles que acreditam na beleza de seus sonhos."</p>
+                    <cite>- Eleanor Roosevelt</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>Parabéns, Formandos!</h3>
+            <p>Que esta conquista seja apenas o primeiro degrau de uma carreira brilhante.</p>
+            
+            <p class="copyright">© <span id="current-year"></span> Celebração de Formatura | Criado com ❤️ para homenagear sua conquista</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'formatura.js'%}"></script>
+</body>
+</html>

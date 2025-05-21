@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Especiais</title>
+    <link rel="stylesheet" href="{% static 'index.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1> Datas Especiais</h1>
+        <p>Celebre os momentos mais importantes da vida</p>
+    </header>
+
+    <div class="image-container">
+        <div class="top-image">
+            <a target="_blank" href="{% url 'dia_das_maes'%}" class="image-link" id="mothers-day">
+                <img src="https://images.pexels.com/photos/1438511/pexels-photo-1438511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dia das Mães">
+                <div class="overlay">
+                    <h3>Dia das Mães</h3>
+                    <p>Celebre o amor mais puro</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="bottom-images">
+            <a target="_blank" href="{% url 'mes_das_noivas'%}" class="image-link" id="brides-month">
+                <img src="https://images.pexels.com/photos/28680646/pexels-photo-28680646/free-photo-of-noiva-em-vestido-elegante-em-pe-perto-de-porta-de-ferro-ornamentada.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mês das Noivas">
+                <div class="overlay">
+                    <h3>Mês das Noivas</h3>
+                    <p>O começo de uma linda jornada</p>
+                </div>
+            </a>
+            
+            <a target="_blank" href="{% url 'formatura'%}" class="image-link" id="graduation">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Formatura">
+                <div class="overlay">
+                    <h3>Formatura</h3>
+                    <p>Celebrando conquistas</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="message-section">
+        <h2>Envie uma Mensagem para Alquem Especial❤️</h2>
+        <form id="message-form" method="POST" >
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="nome_destinatario">Para:</label>
+                <input type="text" id="nome_destinatario" name="nome_destinatario" placeholder="Nome do destinatário" required>
+                <input type="email" id="email_destinatario" name="email_destinatario" placeholder="E-mail do destinatário" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="nome_user">De:</label>
+                <input type="text" id="nome_user" name="nome_user" placeholder="Seu nome" required>
+                <input type="email" id="email_user" name="email_user" placeholder="Seu e-mail" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="assunto_email" placeholder="Escreva sua mensagem especial aqui..." required></textarea>
+            </div>
+        
+            <div class="form-group">
+                <label for="theme">Tema:</label>
+                <select name="tema" id="theme">
+                    <option value="mother">Dia das Mães</option>
+                    <option value="bride">Mês das Noivas</option>
+                    <option value="graduation">Formatura</option>
+                </select>
+            </div>
+        
+            <button type="submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+        </form>
+        
+        <div id="confirmation" class="hidden">
+            <h3><i class="fas fa-check-circle"></i> Mensagem Enviada!</h3>
+            <p>Sua mensagem especial foi enviada com sucesso.</p>
+            <button id="new-message">Enviar outra mensagem</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Eventos Especiais - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="{% static 'index.js'%}"></script>
+</body>
+</html>
